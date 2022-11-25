@@ -1,0 +1,63 @@
+[2022-11-20 01:18:20:905][main] INFO  c.s.d.DiscoveryApplicationTests - Starting DiscoveryApplicationTests using Java 11.0.16.1 on bang-geunhoui-MacBookAir.local with PID 42086 (started by bang-geunho in /Users/bang-geunho/IdeaProjects/msa/formduo-msa/discovery-service)
+[2022-11-20 01:18:20:907][main] INFO  c.s.d.DiscoveryApplicationTests - The following 1 profile is active: "dev"
+[2022-11-20 01:18:20:910][background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+[2022-11-20 01:18:20:928][main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://service-config:8760
+[2022-11-20 01:18:20:928][main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Connect Timeout Exception on Url - http://service-config:8760. Will be trying the next url if available
+[2022-11-20 01:18:21:1725][main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+[2022-11-20 01:18:21:1733][main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+[2022-11-20 01:18:21:1795][main] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=210812dc-c848-349b-beb8-b53b6dbe4309
+[2022-11-20 01:18:21:1994][main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2022-11-20 01:18:21:2014][main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2022-11-20 01:18:23:3736][main] INFO  o.s.c.s.m.DirectWithAttributesChannel - Channel 'discovery-service.springCloudBusInput' has 1 subscriber(s).
+[2022-11-20 01:18:23:3950][main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses Jersey
+[2022-11-20 01:18:23:4202][main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+[2022-11-20 01:18:23:4223][main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+[2022-11-20 01:18:23:4224][main] INFO  c.netflix.discovery.DiscoveryClient - Client configured to neither register nor query for data.
+[2022-11-20 01:18:23:4231][main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1668874703519 with initial instances count: 0
+[2022-11-20 01:18:23:4271][main] INFO  c.n.e.DefaultEurekaServerContext - Initializing ...
+[2022-11-20 01:18:23:4272][main] INFO  c.n.eureka.cluster.PeerEurekaNodes - Adding new peer nodes [http://localhost:8761/eureka/]
+[2022-11-20 01:18:23:4329][main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+[2022-11-20 01:18:23:4330][main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+[2022-11-20 01:18:23:4330][main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+[2022-11-20 01:18:23:4330][main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+[2022-11-20 01:18:23:4427][main] INFO  c.n.eureka.cluster.PeerEurekaNodes - Replica node URL:  http://localhost:8761/eureka/
+[2022-11-20 01:18:23:4432][main] INFO  c.n.e.r.AbstractInstanceRegistry - Finished initializing remote region registries. All known remote regions: []
+[2022-11-20 01:18:23:4432][main] INFO  c.n.e.DefaultEurekaServerContext - Initialized
+[2022-11-20 01:18:23:4511][main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 23 endpoint(s) beneath base path '/actuator'
+[2022-11-20 01:18:23:4612][main] INFO  o.s.i.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+[2022-11-20 01:18:23:4613][main] INFO  o.s.i.c.PublishSubscribeChannel - Channel 'discovery-service.errorChannel' has 1 subscriber(s).
+[2022-11-20 01:18:23:4613][main] INFO  o.s.i.endpoint.EventDrivenConsumer - started bean '_org.springframework.integration.errorLogger'
+[2022-11-20 01:18:23:4616][main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application DISCOVERY-SERVICE with eureka with status UP
+[2022-11-20 01:18:23:4625][Thread-11] INFO  o.s.c.n.e.s.EurekaServerBootstrap - isAws returned false
+[2022-11-20 01:18:23:4625][Thread-11] INFO  o.s.c.n.e.s.EurekaServerBootstrap - Initialized server context
+[2022-11-20 01:18:23:4625][Thread-11] INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Got 1 instances from neighboring DS node
+[2022-11-20 01:18:23:4625][Thread-11] INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Renew threshold is: 1
+[2022-11-20 01:18:23:4625][Thread-11] INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Changing status to UP
+[2022-11-20 01:18:23:4632][Thread-11] INFO  o.s.c.n.e.s.EurekaServerInitializerConfiguration - Started Eureka Server
+[2022-11-20 01:18:24:4721][main] INFO  o.s.c.s.b.r.p.RabbitExchangeQueueProvisioner - declaring queue for inbound: springCloudBus.anonymous.8scbY6gPS2eVOSPsYWnfTg, bound to: springCloudBus
+[2022-11-20 01:18:24:4724][main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+[2022-11-20 01:18:24:4759][main] INFO  o.s.a.r.c.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#1d2d793d:0/SimpleConnection@e870441 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 57224]
+[2022-11-20 01:18:24:4807][main] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'springCloudBus.anonymous.8scbY6gPS2eVOSPsYWnfTg.errors' has 1 subscriber(s).
+[2022-11-20 01:18:24:4807][main] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'springCloudBus.anonymous.8scbY6gPS2eVOSPsYWnfTg.errors' has 2 subscriber(s).
+[2022-11-20 01:18:24:4825][main] INFO  o.s.i.a.i.AmqpInboundChannelAdapter - started bean 'inbound.springCloudBus.anonymous.8scbY6gPS2eVOSPsYWnfTg'
+[2022-11-20 01:18:24:4863][main] INFO  c.s.d.DiscoveryApplicationTests - Started DiscoveryApplicationTests in 4.62 seconds (JVM running for 5.313)
+[2022-11-20 01:18:24:4867][main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2022-11-20 01:18:24:4886][main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application DISCOVERY-SERVICE with eureka with status DOWN
+[2022-11-20 01:18:24:4893][main] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Waiting for workers to finish.
+[2022-11-20 01:18:25:5834][main] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+[2022-11-20 01:18:25:5835][main] INFO  o.s.i.a.i.AmqpInboundChannelAdapter - stopped bean 'inbound.springCloudBus.anonymous.8scbY6gPS2eVOSPsYWnfTg'
+[2022-11-20 01:18:25:5838][main] INFO  o.s.c.s.binder.BinderErrorChannel - Channel 'discovery-service.springCloudBus.anonymous.8scbY6gPS2eVOSPsYWnfTg.errors' has 1 subscriber(s).
+[2022-11-20 01:18:25:5839][main] INFO  o.s.c.n.e.s.EurekaServerBootstrap - Shutting down Eureka Server..
+[2022-11-20 01:18:25:5842][main] INFO  c.n.e.DefaultEurekaServerContext - Shutting down ...
+[2022-11-20 01:18:25:5854][main] INFO  c.n.e.DefaultEurekaServerContext - Shut down
+[2022-11-20 01:18:25:5854][main] INFO  o.s.c.n.e.s.EurekaServerBootstrap - Eureka Service is now shutdown...
+[2022-11-20 01:18:25:5854][main] INFO  o.s.i.endpoint.EventDrivenConsumer - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+[2022-11-20 01:18:25:5855][main] INFO  o.s.i.c.PublishSubscribeChannel - Channel 'discovery-service.errorChannel' has 0 subscriber(s).
+[2022-11-20 01:18:25:5855][main] INFO  o.s.i.endpoint.EventDrivenConsumer - stopped bean '_org.springframework.integration.errorLogger'
+[2022-11-20 01:18:25:5856][main] INFO  c.n.e.DefaultEurekaServerContext - Shutting down ...
+[2022-11-20 01:18:25:5859][main] INFO  c.n.e.DefaultEurekaServerContext - Shut down
+[2022-11-20 01:18:26:6882][main] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+[2022-11-20 01:18:26:6883][main] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+[2022-11-20 01:18:26:6916][Thread-3] INFO  o.s.c.s.a.z.ZipkinAutoConfiguration - Flushing remaining spans on shutdown
